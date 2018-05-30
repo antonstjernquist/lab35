@@ -10,7 +10,7 @@ class Increase extends Component {
   }
 
   increaseClick = () => {
-    this.setState({value: Number(this.state.value + 1)});
+    this.setState({value: Number(this.state.value) + 1});
   }
   decreaseClick = () => {
     this.setState({value: this.state.value - 1});
