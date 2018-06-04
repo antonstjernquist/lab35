@@ -44,12 +44,12 @@ class UserProfile extends Component {
             alert("You have entered an invalid email address!")
 
         }
-        
+
 
     }
     handleImageChange = event => {
       const url = event.target.value;
-      if(url.includes('jpg')){
+      if(url.includes('jpg') && url.includes('http')){
         this.setState({imageCheck: true});
         this.setState({imageValue: url });
       } else {
@@ -64,7 +64,7 @@ class UserProfile extends Component {
 
     render() {
       return (
-        <div>
+        <div className="theWrapperOfDoom">
         <WarningMessage warnings={this.state.warnings}/>
           <input type="text" onChange={this.handleEmailChange} value={this.emailValue} />
           <input type="text" onChange={this.handleImageChange} value={this.imageValue} />
