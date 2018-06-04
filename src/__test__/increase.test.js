@@ -52,11 +52,49 @@ describe('Shallow Increase test', () => {
 
   })
 
+
+/* Utförliga tester för VG */
+
+it ('expect faulty input to not change state', () => {
+    wrapper.setState({value: 5});
+    let inputField = wrapper.find('input').at(0);
+    inputField.simulate('change', { target: { value: "gustav.karlstrom96@hotmail.com" }});
+    expect(wrapper.state('value')).toBe(5);
+});
+
+it ('Object passed in onChange', () => {
+    wrapper.setState({value: 10});
+    let inputField = wrapper.find('input').at(0);
+    inputField.simulate('change', { target: { value: {a: 10, b: 5} }});
+    expect(wrapper.state('value')).toBe(10);
+});
+
+it ('Array passed in onChange', () => {
+    wrapper.setState({value: 15});
+    let inputField = wrapper.find('input').at(0);
+    inputField.simulate('change', { target: { value: ['steve', 'berra'] }});
+    expect(wrapper.state('value')).toBe(15);
+});
+
+it ('Null passed in onChange', () => {
+    wrapper.setState({value: 25});
+    let inputField = wrapper.find('input').at(0);
+    inputField.simulate('change', { target: { value: null }});
+    expect(wrapper.state('value')).toBe(25);
+});
+
+it ('NaN passed in onChange', () => {
+    wrapper.setState({value: 25});
+    let inputField = wrapper.find('input').at(0);
+    inputField.simulate('change', { target: { value: NaN }});
+    expect(wrapper.state('value')).toBe(25);
+});
+
   it('Testing input field onChange', () => {
     wrapper.setState({value: '5'});
     let inputField = wrapper.find('input').at(0);
 
-    inputField.simulate('change', { target: { value: 10 }});
+    inputField.simulate('change', { target: { value: "10"}});
 
     expect(wrapper.state('value')).toBe(10)
   })

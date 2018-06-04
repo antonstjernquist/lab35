@@ -1,24 +1,36 @@
 import React, {Component} from 'react';
+import "./editableList.css";
 
-function AddButtonsAndRenderList(props) {
-    const formatted = props.texts.map((text) => {
-        return (
-            <td>{text} <button onClick={props.removePerson()}></button></td>
-        )
-    })
+export function AddButtonsAndRenderList(props) {
+    let formatted = [];
+    if (props.texts.length > 0) {
+        formatted = props.texts.map((text, index) => {
+            return (
+                <tr key={index}>
+                    <td>
+                        {text}
+                    </td>
+                    <td>
+                     <button onClick={props.handleRemove.bind(this)}>X</button>
+                    </td>
+                </tr>
+            )
+        });
+    }
+    return formatted;
 
 }
 
-function DisplayList(props) {
+export function DisplayList(props) {
     return (
-        <table>
+        <table className="leTable">
             <thead>
             <tr>
                 <th>Text data</th>
             </tr>
             </thead>
             <tbody>
-                <AddButtonsAndRenderList removePerson={props.callback}/>
+            <AddButtonsAndRenderList texts={props.texts} handleRemove={props.callback}/>
             </tbody>
         </table>
     )
@@ -28,39 +40,36 @@ class EditableList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: null,
+            value: "",
             texts: [],
         };
         this.handleInput = this.handleInput.bind(this);
         this.handleAdd = this.handleAdd.bind(this);
-        this.removeText = this.removeText.bind(this);
+        this.handleRemove = this.handleRemove.bind(this);
     }
 
-    handleInput = event => {
+    handleInput(event) {
         this.setState({value: event.target.value});
     };
 
-    handleAdd(val) {
-        this.setState(prevState => ({
-            texts: [...prevState.texts, val]
-        }))
+    handleAdd() {
+        this.setState({texts: [...this.state.texts, this.state.value]});
     };
 
-    removeText(val) {
-        console.log(val);
-        // const stateArray = [...this.state.texts];
-        // const index = stateArray.indexOf(val);
-        // stateArray.splice(index, 1);
-        // this.setState({texts: stateArray});
+    handleRemove(val) {
+        const stateArray = [...this.state.texts];
+        const index = stateArray.indexOf(val);
+        stateArray.splice(index, 1);
+        this.setState({texts: stateArray});
     };
 
 
     render() {
         return (
-            <div>
+            <div className="theHolyFuckingWrapper">
                 <input value={this.state.value} onChange={this.handleInput}/>
                 <button onClick={this.handleAdd} type="button">Add text</button>
-                <DisplayList callback={removeText} texts={this.texts}/>
+                <DisplayList callback={this.handleRemove} texts={this.state.texts}/>
             </div>
         )
     }

@@ -17,7 +17,9 @@ class Increase extends Component {
   }
 
   handleChange = event => {
-    this.setState({value: event.target.value});
+     if (!isNaN(parseFloat(event.target.value)) && isFinite(event.target.value)) {
+       this.setState({value: event.target.value - 0});
+     }
   }
 
   render(){
@@ -31,5 +33,9 @@ class Increase extends Component {
     </div>)
   }
 }
+
+
+
+
 
 export default Increase;
