@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Increase from './components/increaseValue.js';
+import EditableList from "./components/editableList";
 
 class App extends Component {
 
@@ -22,8 +23,8 @@ class App extends Component {
         <li className="listItem"> hej </li>
         <li className="listItem"> då </li>
       </ul>
-
       <Increase />
+      <EditableList/>
     </div>
   )
   }
