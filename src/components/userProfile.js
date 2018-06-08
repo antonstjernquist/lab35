@@ -48,12 +48,14 @@ class UserProfile extends Component {
 
     }
     handleImageChange = event => {
+      /* Only accept safe files */
       const url = event.target.value;
-      if(url.includes('jpg') && url.includes('http')){
+      if(url.includes('jpg') && url.includes('https://')){
         this.setState({imageCheck: true});
         this.setState({imageValue: url });
       } else {
         this.setState({imageCheck: false});
+        console.log('Bad image URL. Note: It has to be a secure image.');
       }
     }
 
