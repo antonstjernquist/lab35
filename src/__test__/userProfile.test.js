@@ -22,6 +22,11 @@ describe('User Profile', () => {
         instance = wrapper.instance();
         inputImage = wrapper.find('input').at(1);
     })
+
+    it('shallow smoke test: UserProfile', () => {
+        let wrapper = shallow(<UserProfile />);
+    })
+
     it ('Contains expected', () => {
         const jsx = (
             <div className="theWrapperOfDoom">
@@ -35,47 +40,43 @@ describe('User Profile', () => {
         expect(content).toBe(true);
     });
 
-    // it ('Correct email', () => {
-    //     wrapper.setState({emailCheck: false});
-    //     const input = wrapper.find('input').at(0);
-    //     input.simulate('change', {target: {value: 'majBoi@biz.com'}});
-    //     expect('emailCheck').toBe(true);
-    //
-    // });
-    // it ('Already in use email', () => {
-    //     wrapper.setState({emailCheck: false});
-    //     const input = wrapper.find('input').at(0);
-    //     input.simulate('change', {target: {value: 'steve@lit.com'}});
-    //     expect('emailCheck').toBe(false);
-    // });
-    //
-    // it ('Faulty email', () => {
-    //     wrapper.setState({emailCheck: false});
-    //     const input = wrapper.find('input').at(0);
-    //     input.simulate('change', {target: {value: 'dwkdlit.com'}});
-    //     expect('emailCheck').toBe(false);
-    // });
-    //
-    // it ('Faulty input:NaN', () => {
-    //     wrapper.setState({emailCheck: false});
-    //     const input = wrapper.find('input').at(0);
-    //     input.simulate('change', {target: {value: NaN}});
-    //     expect('emailCheck').toBe(false);
-    // });
-    //
-    // it ('Faulty input:Undefined', () => {
-    //     wrapper.setState({emailCheck: false});
-    //     const input = wrapper.find('input').at(0);
-    //     input.simulate('change', {target: {value: undefined}});
-    //     expect('emailCheck').toBe(false);
-    // });
-    //
-    // it ('Faulty input: null', () => {
-    //     wrapper.setState({emailCheck: false});
-    //     const input = wrapper.find('input').at(0);
-    //     input.simulate('change', {target: {value: null}});
-    //     expect('emailCheck').toBe(false);
-    // });
+    it ('Correct email', () => {
+        const input = wrapper.find('input').at(0);
+        input.simulate('change', {target: {value: 'majBoi@gmail.com'}});
+        expect(wrapper.state('emailCheck')).toBe(true);
+
+    });
+    it ('Already in use email', () => {
+        const input = wrapper.find('input').at(0);
+        input.simulate('change', {target: {value: 'steve@lit.com'}});
+        expect(wrapper.state('emailCheck')).toBe(false);
+    });
+
+    it ('Faulty email', () => {
+        const input = wrapper.find('input').at(0);
+        console.log(input.html());
+        input.simulate('change', {target: {value: 'dwkdlit.com'}});
+        expect(wrapper.state('emailCheck')).toBe(false);
+    });
+
+    it ('Faulty input:NaN', () => {
+
+        const input = wrapper.find('input').at(0);
+        input.simulate('change', {target: {value: NaN}});
+        expect(wrapper.state('emailCheck')).toBe(false);
+    });
+
+    it ('Faulty input:Undefined', () => {
+        const input = wrapper.find('input').at(0);
+        input.simulate('change', {target: {value: undefined}});
+        expect(wrapper.state('emailCheck')).toBe(false);
+    });
+
+    it ('Faulty input: null', () => {
+        const input = wrapper.find('input').at(0);
+        input.simulate('change', {target: {value: null}});
+        expect(wrapper.state('emailCheck')).toBe(false);
+    });
 
 
     /* Image URL checks */

@@ -29,20 +29,24 @@ class UserProfile extends Component {
           imageCheck: false,
           warnings: [],
           props: { // hehe
-            alreadyInUseMails: ['berra@gmail.com', 'steve@lit.com']
+            alreadyInUseMails: ['berra@gmail.com', 'steve@lit.com', 'majBoiz@gmail.com']
           }
         };
     }
 
     handleEmailChange = event => {
         const val = event.target.value;
+        if (typeof val !== 'string') {
+            this.setState({emailCheck: false});
+            return;
+        }
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(val)) {
-            if (this.state.props.alreadyInUseMails.includes(val)) {
-                this.setState({emailValue: val });
+            if (!this.state.props.alreadyInUseMails.includes(val)) {
+                this.setState({emailValue: val, emailCheck: true });
             }
         } else {
             alert("You have entered an invalid email address!")
-
+            this.setState({emailCheck: false});
         }
 
 
@@ -51,8 +55,7 @@ class UserProfile extends Component {
       /* Only accept safe files */
       const url = event.target.value;
       if(url.includes('jpg') && url.includes('https://')){
-        this.setState({imageCheck: true});
-        this.setState({imageValue: url });
+        this.setState({imageCheck: true, imageValue: url });
       } else {
         this.setState({imageCheck: false});
         console.log('Bad image URL. Note: It has to be a secure image.');

@@ -10,8 +10,11 @@ describe('Shallow Increase test', () => {
   let wrapper = shallow(<Increase />);
   let instance = wrapper.instance();
 
-  it('Increase shallow render test', () => {
+  it('shallow smoke test: Increase', () => {
+      let wrapper = shallow(<Increase />);
+  })
 
+  it('Increase shallow render test', () => {
 
     let jsx = (<div>
           <input type="number" value={instance.state.value} onChange={instance.handleChange} />
