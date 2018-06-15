@@ -35,8 +35,8 @@ describe('EditableList', () => {
     it ('On input add to state value', () => {
        expect(wrapper.state('value').length).toBe(0);
        const input = wrapper.find('input').at(0);
-       input.simulate('change', {target: {value: "dickring"}});
-       expect(wrapper.state('value')).toBe("dickring");
+       input.simulate('change', {target: {value: "bestObj"}});
+       expect(wrapper.state('value')).toBe("bestObj");
     });
 });
 

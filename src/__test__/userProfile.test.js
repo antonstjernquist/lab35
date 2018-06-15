@@ -1,8 +1,3 @@
-// Komponenten ska innehålla ett formulär där användaren kan fylla i sin e-postadress och länk till profilbild.
-// Alla fält ska valideras. Dvs om anv{ändaren fyller i ett felaktigt värde i något fält så ska det dyka upp ett meddelande i komponenten, som beskriver vad man har gjort fel.
-// Använd bool-variabler i state.
-// En e-postadress måste vara unik, så för att kontrollera att den som användaren skriver in inte är upptagen så måste komponenten få en lista över upptagna adresser via props.
-// (I en riktig app hade man gjort AJAX till ett API i stället)}
 
 import React from "react";
 import UserProfile, {WarningMessage} from '../components/userProfile.js'

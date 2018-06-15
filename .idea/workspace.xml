@@ -4,7 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/src/components/editableList.js" line="59" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09028d6d-c6c9-43ef-bc3c-a0273da73bcf" name="Default" comment="" />
+    <list default="true" id="09028d6d-c6c9-43ef-bc3c-a0273da73bcf" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__test__/editableList.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/editableList.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__test__/userProfile.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__test__/userProfile.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/userProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/userProfile.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="editableList.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/editableList.js">
+      <file leaf-file-name="rapport.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/rapport.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="68" column="51" lean-forward="true" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+            <state>
+              <caret column="62" selection-start-column="62" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -47,11 +52,15 @@
       <find>this</find>
       <find>instance</find>
       <find>console.log</find>
+      <find>dickring</find>
+      <find>alert</find>
+      <find>warnings</find>
     </findStrings>
     <replaceStrings>
       <replace>removePerson</replace>
       <replace>instance</replace>
       <replace>wrapper</replace>
+      <replace>bestObj</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -62,12 +71,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/increaseValue.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/editableList.css" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/__test__/increase.test.js" />
-        <option value="$PROJECT_DIR$/src/__test__/editableList.test.js" />
         <option value="$PROJECT_DIR$/src/components/editableList.js" />
+        <option value="$PROJECT_DIR$/src/__test__/editableList.test.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/__test__/userProfile.test.js" />
+        <option value="$PROJECT_DIR$/src/components/userProfile.js" />
+        <option value="$PROJECT_DIR$/src/rapport.txt" />
       </list>
     </option>
   </component>
@@ -94,8 +106,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="1080" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -120,12 +132,6 @@
               <item name="lab35" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="__test__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lab35" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab35" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -219,6 +225,7 @@
       <workItem from="1528096272535" duration="4889000" />
       <workItem from="1528101183883" duration="4400000" />
       <workItem from="1528446365603" duration="52000" />
+      <workItem from="1529048731416" duration="1539000" />
     </task>
     <servers />
   </component>
@@ -246,13 +253,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13785000" />
+    <option name="totallyTimeSpent" value="15324000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49901184" visible="true" weight="0.2375" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49901184" visible="true" weight="0.21453775" />
       <window_info anchor="bottom" id="TODO" order="11" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.32943678" />
@@ -260,7 +267,7 @@
       <window_info id="npm" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="7" weight="0.38336933" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.2688889" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.2645241" />
       <window_info id="Favorites" order="1" sideWeight="0.5009881" side_tool="true" weight="0.2375" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -277,23 +284,23 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
       <window_info id="npm" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.38336933" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49901184" visible="true" weight="0.2375" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info id="Favorites" order="1" sideWeight="0.5009881" side_tool="true" weight="0.2375" />
-      <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.38336933" />
       <window_info anchor="bottom" id="RNConsole" order="0" />
-      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.2699784" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" weight="0.32943678" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Messages" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49901184" visible="true" weight="0.2375" />
+      <window_info id="Favorites" order="1" sideWeight="0.5009881" side_tool="true" weight="0.2375" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +315,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/editableList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="68" column="51" lean-forward="true" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/editableList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
@@ -367,31 +381,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/__test__/app.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/editableList.css" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/increaseValue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -406,10 +396,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/__test__/app.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/__test__/editableList.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+        <state relative-caret-position="241">
+          <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -426,10 +423,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="54" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__test__/userProfile.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/editableList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="68" column="51" lean-forward="true" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+        <state relative-caret-position="361">
+          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/userProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="86" column="56" selection-start-line="86" selection-start-column="56" selection-end-line="86" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rapport.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="62" selection-start-column="62" selection-end-column="62" />
         </state>
       </provider>
     </entry>
