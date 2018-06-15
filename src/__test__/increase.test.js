@@ -65,12 +65,6 @@ it ('expect faulty input to not change state', () => {
     expect(wrapper.state('value')).toBe(5);
 });
 
-it ('Object passed in onChange', () => {
-    wrapper.setState({value: 10});
-    let inputField = wrapper.find('input').at(0);
-    inputField.simulate('change', { target: { value: {a: 10, b: 5} }});
-    expect(wrapper.state('value')).toBe(10);
-});
 
 it ('Array passed in onChange', () => {
     wrapper.setState({value: 15});
